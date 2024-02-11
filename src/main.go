@@ -11,9 +11,10 @@ func run_http_server() {
 }
 
 func main() {
-    //run_http_server()
+    var wasm_dir_file_path string = "wasm_files/"
 
-    build_wasm_binary()
+    build_wasm_binary(wasm_dir_file_path)
+    run_http_server()
 
     fmt.Println("main() function HIT!")
 }
