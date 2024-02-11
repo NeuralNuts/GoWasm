@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Horizontal Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Section 0 -->
+    <section id="section0" class="d-flex justify-content-center align-items-center text-center section">
+        <div class="col-12">
+            <h1>Welcome</h1>
+            <a href="resume.html" style="font-size: 30px">resume</a>
+            <p>Here is an arrangement of my projects</p>
+
+            <a href="https://github.com/NeuralNuts" target="_blank">
+                <img src="Images/github.png" class="img-fluid icon"/>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/zakk-wilson-christian-00b325240/" target="_blank">
+                <img src="Images/linkedin.png" class="img-fluid icon" />
+            </a>
+        </div>
+    </section>
+
+    <!-- Section 1 -->
+    <section id="section1" class="d-flex justify-content-center align-items-center text-center section">
+        <div class="col-lg-6 col-md-8 col-sm-10">
+            <div class="project-div">
+                <h1>TorchTrack</h1>
+            </div>
+            <div class="image-box">
+                <div class="overlay">
+                    <p>TorchTrack is an ongoing web app and Python library designed to track PyTorch models and training data, offering seamless integration with PyTorch, model performance tracking, and efficient data monitoring.</p>
+
+                    <a href="https://github.com/NeuralNuts/TorchTrackApp" target="_blank">
+                        <img src="Images/github.png" class="img-fluid icon" />
+                    </a>
+                </div>
+                <img src="Images/tr.png" alt="Descriptive Alt Text" class="img-fluid">
+            </div>
+            <button class="btn btn-primary demo-btn mt-1 mb-5" id="open-torch-track">Demo</button>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section id="section2" class="d-flex justify-content-center align-items-center text-center section">
+        <div class="col-lg-6 col-md-8 col-sm-10">
+            <div class="project-div">
+                <h1>CloudGlimspe</h1>
+            </div>
+            <div class="image-box">
+                <div class="overlay">
+                    <p>Lidar visualiztion web app for .las files, built in Rust with wepgpu and wasm</p>
+
+                    <a href="https://github.com/NeuralNuts/CloudGlimpseRust" target="_blank">
+                        <img src="Images/github.png" class="img-fluid icon" />
+                    </a>
+                </div>
+                <img src="Images/p2.png" alt="Descriptive Alt Text" class="img-fluid">
+            </div>
+            <button class="btn btn-primary demo-btn mt-1 mb-5" id="open-cloud-glimpse">Demo</button>
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="section3" class="d-flex justify-content-center align-items-center text-center section">
+        <div class="col-lg-6 col-md-8 col-sm-10">
+            <div class="project-div">
+                <h1>Sensor REST API</h1>
+            </div>
+            <div class="image-box">
+                <div class="overlay">
+                    <p>A REST API that interfacing with sensor data from IOT devices using mongoDB and C#.</p>
+                    <a href="https://github.com/NeuralNuts/ClimateRestApi" target="_blank">
+                        <img src="Images/github.png" class="img-fluid icon" />
+                    </a>
+                </div>
+                <img src="Images/rest.jpg" alt="Descriptive Alt Text" class="img-fluid">
+            </div>
+            <button class="btn btn-primary demo-btn mt-1 mb-5" id="open-sensor-rest-api">Demo</button>
+        </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section id="section4" class="d-flex justify-content-center align-items-center text-center section">
+        <div class="col-lg-6 col-md-8 col-sm-10 mb-5">
+            <div class="project-div">
+                <h1>Nippy</h1>
+            </div>
+            <div class="image-box">
+                <div class="overlay">
+                    <p>Programming language built in c</p>
+                </div>
+                <img src="Images/nippy.png" alt="Descriptive Alt Text" class="img-fluid">
+            </div>
+            <a href="https://github.com/NeuralNuts/Nippy" target="_blank">
+                <img src="Images/github.png" class="img-fluid icon" />
+            </a>
+        </div>
+    </section>
+    <!-- Add more sections as needed -->
+
+    <!-- Navigation buttons fixed to the bottom -->
+    <div class="nav-buttons fixed-bottom text-center">
+        <button onclick="scrollToSection('section0')" class="btn btn-secondary"></button>
+        <button onclick="scrollToSection('section1')" class="btn btn-secondary"></button>
+        <button onclick="scrollToSection('section2')" class="btn btn-secondary"></button>
+        <button onclick="scrollToSection('section3')" class="btn btn-secondary"></button>
+        <button onclick="scrollToSection('section4')" class="btn btn-secondary"></button>
+        <!-- Add more buttons corresponding to sections -->
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
